@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EjemploContentProvider">
+
+    <Button
+        android:id="@+id/btnMostrarLlamadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Mostrar log llamadas"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="71dp"
+        android:onClick="mostrarLlamadas"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvLlamadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mi log de llamadas" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Llamadas"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+
+</LinearLayout>

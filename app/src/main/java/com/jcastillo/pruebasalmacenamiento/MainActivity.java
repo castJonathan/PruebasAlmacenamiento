@@ -14,19 +14,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void irCrearArchivo(View view){
-        Intent i = new Intent( this, EjemploFile.class );
+    public void irCrearArchivo(View view) {
+        Intent i = new Intent(this, EjemploFile.class);
         startActivity(i);
     }
 
-    public void irCrearSharedPreferences(View view){
-        Intent i = new Intent( this, EjemploSharedPreference.class);
+    public void irCrearSharedPreferences(View view) {
+        Intent i = new Intent(this, EjemploSharedPreference.class);
         startActivity(i);
 
     }
 
     public void irCrearBD(View view) {
-        Intent i = new Intent( this, EjemploSQLite.class);
+        Intent i = new Intent(this, EjemploSQLite.class);
+        startActivity(i);
+    }
+
+    public void irContentProvider(View view) {
+
+        Intent i = new Intent(this, EjemploContentProvider.class);
         startActivity(i);
     }
 }
